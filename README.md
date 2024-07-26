@@ -1,13 +1,6 @@
 
 # EverTranslator 
 [![GitHub version](https://badge.fury.io/gh/firemaples%2FEverTranslator.svg)](https://badge.fury.io/gh/firemaples%2FEverTranslator) 
-[![CI](https://github.com/firemaples/EverTranslator/actions/workflows/ci.yml/badge.svg)](https://github.com/firemaples/EverTranslator/actions/workflows/ci.yml)
-
-<a href="https://play.google.com/store/apps/details?id=tw.firemaples.onscreenocr">
-  <img src="https://play.google.com/intl/en_us/badges/images/badge_new.png" alt="Get it on google play" />
-  <img src="https://PlayBadges.pavi2410.me/badge/downloads?id=tw.firemaples.onscreenocr" />
-  <img src="https://PlayBadges.pavi2410.me/badge/ratings?id=tw.firemaples.onscreenocr" />
-</a>
 
 <img src="materials/mipmap-xxhdpi/icon.png" alt="app icon" align="right" />
 
@@ -33,34 +26,26 @@ Translate any text on screen, even in games!
 - Android 5.0 (API level 21) or above.
 - Permission of display over other apps. (not suitable for Android Go)
 
-## Get the app
+## Build from source
 
-### Download it on Google Play
-
-<a href="https://play.google.com/store/apps/details?id=tw.firemaples.onscreenocr">
-  <img src="https://play.google.com/intl/en_us/badges/images/badge_new.png" alt="Get it on google play" />
-</a>
-
-### Build from source
-
-#### Environment requirements
+### Environment requirements
 
 - Android SDK
 - Android Studio (optional)
 
-#### Produce APK by command line
+### Produce APK by command line
 
 1. Create a local file `./local.properties` and put your Android SDK path to it as `sdk.dir=path to SDK`, or simplily <a href='#open-project-in-android-stuido'>open the project with Android Studio</a>, it will automatically create the required file for you.
 1. Assemble APK file by ```./gradlew clean assembleDevDebug```
 1. You can find the APK file on `main/build/outputs/apk/dev/debug/main-dev-debug.apk`
 1. Install debug APK to your phone by ```adb install -r -t main/build/outputs/apk/dev/debug/main-dev-debug.apk```
 
-#### Open project in Android Stuido
+### Open project in Android Stuido
 
 1. Open the project's root folder by Android Studio, the application module is the `main` folder.
 1. You can simplily build and run application by the built-in buttons in Android Studio.
 
-#### Flavors
+### Flavors
 
 - **Dev** for development
 - **Prod** for releasing to Google Play
