@@ -4,7 +4,7 @@ import android.app.Application
 import tw.firemaples.onscreenocr.log.FirebaseEvent
 import tw.firemaples.onscreenocr.log.UserInfoUtils
 import tw.firemaples.onscreenocr.remoteconfig.RemoteConfigManager
-import tw.firemaples.onscreenocr.utils.AdManager
+//import tw.firemaples.onscreenocr.utils.AdManager
 
 class CoreApplication : Application() {
     companion object {
@@ -18,6 +18,6 @@ class CoreApplication : Application() {
         FirebaseEvent.validateSignature()
         UserInfoUtils.setClientInfo()
         RemoteConfigManager.tryFetchNew()
-        AdManager.init()
+        //AdManager.init()
     }
 }

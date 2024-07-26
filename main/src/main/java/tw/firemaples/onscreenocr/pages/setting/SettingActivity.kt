@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import tw.firemaples.onscreenocr.databinding.ActivitySettingBinding
-import tw.firemaples.onscreenocr.utils.AdManager
+//import tw.firemaples.onscreenocr.utils.AdManager
 
 class SettingActivity : AppCompatActivity() {
     companion object {
@@ -24,7 +24,7 @@ class SettingActivity : AppCompatActivity() {
         binding = ActivitySettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        AdManager.loadBanner(binding.admobAd)
+//        AdManager.loadBanner(binding.admobAd)
 
 //        MoPubAdManager.loadSettingPageBanner(this, findViewById(R.id.ad_settingPage))
     }

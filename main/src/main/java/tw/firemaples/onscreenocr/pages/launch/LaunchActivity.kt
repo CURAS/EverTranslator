@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import tw.firemaples.onscreenocr.databinding.ActivityLaunchBinding
 import tw.firemaples.onscreenocr.remoteconfig.RemoteConfigManager
-import tw.firemaples.onscreenocr.utils.AdManager
+//import tw.firemaples.onscreenocr.utils.AdManager
 import tw.firemaples.onscreenocr.utils.DeviceInfoChecker
 
 class LaunchActivity : AppCompatActivity() {
@@ -25,7 +25,7 @@ class LaunchActivity : AppCompatActivity() {
         binding = ActivityLaunchBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        AdManager.loadBanner(binding.admobAd.root)
+//        AdManager.loadBanner(binding.admobAd.root)
 
 //        MoPubAdManager.loadPermissionPageBanner(this, findViewById(R.id.ad_permissionPage))
 
