@@ -60,7 +60,7 @@ class TesseractTextRecognizer : TextRecognizer {
                         innerCode = innerCode,
                     )
                 }
-                .sortedBy { it.displayName }
+                .sortedBy { it.code }
         }
     }
 

@@ -46,7 +46,7 @@ interface TextRecognizer {
                 } else it
             }
 
-            return langList.sortedBy { it.displayName }
+            return langList.sortedBy { it.code }
         }
 
         fun allSupportedLanguages(

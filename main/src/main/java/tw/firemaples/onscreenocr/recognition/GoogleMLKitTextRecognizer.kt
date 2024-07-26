@@ -54,7 +54,7 @@ class GoogleMLKitTextRecognizer : TextRecognizer {
 
             return result
                 .distinctBy { it.displayName }
-                .sortedBy { it.displayName }
+                .sortedBy { it.code }
         }
     }
 
