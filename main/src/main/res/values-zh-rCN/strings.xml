@@ -8,6 +8,7 @@
 
     <string name="translation_provider_microsoft_azure">微软 Azure</string>
     <string name="translation_provider_google_ml_kit">Google MLKit</string>
+    <string name="translation_provider_tencent">腾讯翻译君</string>
     <string name="translation_provider_google_translate_app">Google 翻译 App</string>
     <string name="translation_provider_none">仅辨识文字</string>
     <string name="ocr_provider_google_ml_kit">Google MLKit (推荐)</string>
@@ -112,4 +113,6 @@
     <string name="pref_summary_on_keep_media_projection_resources">维持相关资源直到重启程式</string>
     <string name="pref_summary_off_keep_media_projection_resources">每次使用后释放相关资源</string>
     <string name="pref_screenshot">萤幕截图</string>
+    <string name="pref_title_tencent_api_id">腾讯翻译君 SecretID</string>
+    <string name="pref_title_tencent_api_key">腾讯翻译君 SecretKey</string>
 </resources>

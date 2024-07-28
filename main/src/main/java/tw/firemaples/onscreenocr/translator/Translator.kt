@@ -14,6 +14,7 @@ import tw.firemaples.onscreenocr.translator.app.YandexTranslateAppTranslator
 import tw.firemaples.onscreenocr.translator.azure.MicrosoftAzureTranslator
 import tw.firemaples.onscreenocr.translator.googlemlkit.GoogleMLKitTranslator
 import tw.firemaples.onscreenocr.translator.mymemory.MyMemoryTranslator
+import tw.firemaples.onscreenocr.translator.tencent.TencentTranslator
 import tw.firemaples.onscreenocr.translator.ocronly.OCROnlyTranslator
 import tw.firemaples.onscreenocr.utils.Constants
 import tw.firemaples.onscreenocr.utils.Utils
@@ -30,6 +31,7 @@ interface Translator {
                 TranslationProviderType.MicrosoftAzure -> MicrosoftAzureTranslator
                 TranslationProviderType.GoogleMLKit -> GoogleMLKitTranslator
                 TranslationProviderType.MyMemory -> MyMemoryTranslator
+                TranslationProviderType.Tencent -> TencentTranslator
                 TranslationProviderType.GoogleTranslateApp -> GoogleTranslateAppTranslator
                 TranslationProviderType.BingTranslateApp -> BingTranslateAppTranslator
                 TranslationProviderType.PapagoTranslateApp -> PapagoTranslateAppTranslator
@@ -74,6 +76,7 @@ enum class TranslationProviderType(
     MicrosoftAzure(0, "microsoft_azure", R.string.translation_provider_microsoft_azure),
     GoogleMLKit(1, "google_ml_kit", R.string.translation_provider_google_ml_kit),
     MyMemory(3, "my_memory", R.string.translation_provider_my_memory),
+    Tencent(4, "tencent", R.string.translation_provider_tencent),
     GoogleTranslateApp(
         10, "google_translate_app", R.string.translation_provider_google_translate_app,
         nonTranslation = true,

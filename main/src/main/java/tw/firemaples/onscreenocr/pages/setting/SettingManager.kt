@@ -38,6 +38,8 @@ object SettingManager {
     private const val PREF_EXIT_APP_WHILE_SPEN_INSERTED = "pref_exit_app_while_spen_inserted"
 
     const val PREF_MYMEMORY_EMAIL = "pref_mymemory_email"
+    const val PREF_TENCENT_API_ID = "pref_tencent_api_id"
+    const val PREF_TENCENT_API_KEY = "pref_tencent_api_key"
 
     private val DEFAULT_JOINER = TextBlockJoiner.Space
 
@@ -119,6 +121,11 @@ object SettingManager {
             ?.takeIf {
                 it.isNotEmpty() && PatternsCompat.EMAIL_ADDRESS.matcher(it).matches()
             }
+
+    val tencentApiId: String?
+        get() = preferences.getString(PREF_TENCENT_API_ID, null)
+    val tencentApiKey: String?
+        get() = preferences.getString(PREF_TENCENT_API_KEY, null)
 
     init {
         preferences.registerOnSharedPreferenceChangeListener { _, key ->

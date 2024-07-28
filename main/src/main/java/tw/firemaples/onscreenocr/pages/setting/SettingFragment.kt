@@ -21,6 +21,11 @@ class SettingFragment : PreferenceFragmentCompat() {
     private val myMemoryEmail: EditTextPreference?
         get() = findPreference(SettingManager.PREF_MYMEMORY_EMAIL)
 
+    private val tencentApiId: EditTextPreference?
+        get() = findPreference(SettingManager.PREF_TENCENT_API_ID)
+    private val tencentApiKey: EditTextPreference?
+        get() = findPreference(SettingManager.PREF_TENCENT_API_KEY)
+
     private val keepMediaProjectionResources: SwitchPreference?
         get() = findPreference(SettingManager.PREF_KEEP_MEDIA_PROJECTION_RESOURCES)
 
@@ -36,6 +41,13 @@ class SettingFragment : PreferenceFragmentCompat() {
 
         myMemoryEmail?.setOnBindEditTextListener {
             it.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS
+        }
+
+        tencentApiId?.setOnBindEditTextListener {
+            it.inputType = InputType.TYPE_CLASS_TEXT
+        }
+        tencentApiKey?.setOnBindEditTextListener {
+            it.inputType = InputType.TYPE_CLASS_TEXT
         }
 
         keepMediaProjectionResources?.setOnPreferenceChangeListener { _, _ ->

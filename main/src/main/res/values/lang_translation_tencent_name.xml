@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translation target language codes for the Tencent Translate API. -->
+    <!-- The elements in this array must match to the tencent_translationLangCode_iso639_iso3166 array. -->
+    <string-array name="tencent_translationLangName">
+        <item>Arabic</item>
+        <item>Chinese Simplified</item>
+        <item>Chinese Traditional</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Hindi</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Malay</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Vietnamese</item>
+    </string-array>
+</resources>

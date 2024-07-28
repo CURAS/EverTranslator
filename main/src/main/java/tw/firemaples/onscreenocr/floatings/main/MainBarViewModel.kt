@@ -163,6 +163,7 @@ class MainBarViewModel(viewScope: CoroutineScope) : FloatingViewModel(viewScope)
             TranslationProviderType.MicrosoftAzure,
             TranslationProviderType.GoogleMLKit,
             TranslationProviderType.MyMemory,
+            TranslationProviderType.Tencent,
             TranslationProviderType.PapagoTranslateApp,
             TranslationProviderType.YandexTranslateApp,
             TranslationProviderType.OCROnly -> null
@@ -179,6 +180,7 @@ class MainBarViewModel(viewScope: CoroutineScope) : FloatingViewModel(viewScope)
             TranslationProviderType.MicrosoftAzure,
             TranslationProviderType.GoogleMLKit,
             TranslationProviderType.MyMemory -> "$ocrLang>$translationLang"
+            TranslationProviderType.Tencent -> "$ocrLang>$translationLang"
         }
     }
 

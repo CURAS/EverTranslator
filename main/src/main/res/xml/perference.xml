@@ -85,6 +85,12 @@
             android:key="pref_mymemory_email"
             android:summary="@string/pref_summary_mymemory_email"
             android:title="@string/pref_title_mymemory_email" />
+        <EditTextPreference
+            android:key="pref_tencent_api_id"
+            android:title="@string/pref_title_tencent_api_id" />
+        <EditTextPreference
+            android:key="pref_tencent_api_key"
+            android:title="@string/pref_title_tencent_api_key" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/pref_result_panel">

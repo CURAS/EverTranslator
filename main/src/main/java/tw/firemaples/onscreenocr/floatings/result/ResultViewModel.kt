@@ -143,7 +143,10 @@ class ResultViewModel(viewScope: CoroutineScope) : FloatingViewModel(viewScope) 
                     _translationProviderText.value =
                         "${context.getString(R.string.text_translated_by)} " +
                                 context.getString(translationProviderType.nameRes)
-
+                TranslationProviderType.Tencent ->
+                    _translationProviderText.value =
+                        "${context.getString(R.string.text_translated_by)} " +
+                                context.getString(translationProviderType.nameRes)
                 TranslationProviderType.GoogleMLKit ->
                     _displayTranslatedByGoogle.value = true
 
